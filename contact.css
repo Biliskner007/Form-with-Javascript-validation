@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+/* M O B I L E */
+body {
+    width: 100%;
+    /* background: url(../img/contact.jpg) no-repeat fixed 50%/cover; */
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-con {
+    width: 90%;
+    height: 100%;
+    padding-top: 25%;
+    overflow: hidden;
+}
+
+.title-con {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+}
+
+.wrapper-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+form {
+    width: 100%;
+    font-family:Verdana, 'Geneva', Tahoma, sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.form-control {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.form-control label {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #111;
+    padding-bottom: 8px;
+}
+
+.form-control span {
+    font-size: 20px;
+    color: red;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #111;
+}
+
+.form-control textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+    border: 1px solid #10b418;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+    border: 1px solid #e4311d;
+}
+
+.form-control i {
+    position: absolute;
+    top: 36px;
+    right: 5px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #10b418;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e4311d;
+    visibility: visible;
+}
+
+.form-control p,
+.form-control.success p {
+    visibility: hidden;
+    font-size: 15px;
+    color: #fff;
+}
+
+.form-control.error p {
+    color: #e4311d;
+    text-shadow: 1px 1px 1px #000;
+    visibility: visible;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #bd0322;
+    background-image: linear-gradient(rgb(180, 57, 77), rgb(180, 57, 77));
+    background-size: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgb(230, 129, 129);
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-size: 100%;
+    transform: scale(0.95);
+    box-shadow: 2px 2px 2px rgb(230, 129, 129);
+    letter-spacing: 8px;
+}
+
+.submit-message {
+    padding: 20px;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+    display: none;
+}
+
+/* T A B L E T 600px */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* D E S K T O P 1000px */
+@media only screen and (min-width: 1000px) {
+    
+    .wrapper-con {
+        width: 60%;
+        padding-top: 5%;
+    }
+
+    form h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .form-control {
+        padding-bottom: 30px;
+    }
+
+    .form-control label {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .form-control i {
+        top: 40px;
+        right: 10px;
+    }
+
+    .form-control small {
+        bottom: 10px;
+    }
+}
+
+/* D E S K T O P 1500px */
+@media only screen and (min-width: 1500px) {
+    
+    .wrapper-con {
+        width: 60%;
+        padding-top: 5%;
+    }
+
+    form h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .form-control {
+        padding-bottom: 30px;
+    }
+
+    .form-control label {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .form-control i {
+        top: 40px;
+        right: 10px;
+    }
+
+    .form-control small {
+        bottom: 10px;
+    }
+}
